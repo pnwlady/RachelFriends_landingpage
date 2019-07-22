@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Project Title Here</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="">Medical</a></li>
+                <li><a href="">Agriculture</a></li>
+                <li><a href="">Emergency Services</a></li>
+                <li><a href="">Tools</a>
+                    <ul>
+                        <li><a href="">File Share</a></li>
+                        <li><a href="">Browsers</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Resources</a>
+                    <ul>
+                        <li><a href="">Wictionary</a></li>
+                        <li><a href="">Browsers</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section class="main-content">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Subject')">Subject</button>
+            <button class="tablinks" onclick="openTab(event, 'Level')">Level</button>
+            <button class="tablinks" onclick="openTab(event, 'Source')">Source</button>
+        </div>
+        
+        <div id="Subject" class="tabcontent subject">
+            <div class="card">Art</div>
+            <div class="card">Bigraphy</div>
+            <div class="card">Business</div>
+            <div class="card">Economics</div>
+            <div class="card">Geography</div>
+            <div class="card">History</div>
+            <div class="card">Language</div>
+            <div class="card">Music</div>
+            <div class="card">Religion</div>
+            <div class="card">Science</div>
+            <div class="card">Technology</div>
+        </div>
+        
+        <div id="Level" class="tabcontent level">
+            <!-- <div class="card">Pre-K</div> -->
+            <div class="card">K-4</div>
+            <div class="card">5-8</div>
+            <div class="card">9-12</div>
+            <!-- <div class="card">CE</div> -->
+        </div>
+        
+        <div id="Source" class="tabcontent source">
+            <div class="card">KA-Lite</div>
+            <div class="card">Wikipedia for Schools</div>
+            <div class="card">Interactive World Map</div>
+            <div class="card">GCF LearnFree</div>
+            <div class="card">Geography</div>
+            <div class="card">History</div>
+            <div class="card">Language</div>
+            <div class="card">Music</div>
+            <div class="card">Religion</div>
+            <div class="card">Science</div>
+            <div class="card">Technology</div>
+        </div>
+    </section>
+  <script src="index.js"></script>
+</body>
+</html>
