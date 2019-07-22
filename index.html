@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Project Title Here</title>
   <meta name="description" content="">
@@ -13,18 +14,39 @@
 <body>
     <header>
         <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="">Medical</a></li>
-                <li><a href="">Agriculture</a></li>
-                <li><a href="">Emergency Services</a></li>
-                <li><a href="">Tools</a>
-                    <ul>
+            <ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Medical</button>
+                    <ul class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Agriculture</button>
+                    <ul class="dropdown-content">
+                        <li><a href="">One</a></li>
+                        <li><a href="">Two</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Emergency</button>
+                    <ul class="dropdown-content">
+                        <li><a href="">One</a></li>
+                        <li><a href="">Two</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Tools</button>
+                    <ul class="dropdown-content">
                         <li><a href="">File Share</a></li>
                         <li><a href="">Browsers</a></li>
                     </ul>
                 </li>
-                <li><a href="">Resources</a>
-                    <ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <ul class="dropdown-content">
                         <li><a href="">Wictionary</a></li>
                         <li><a href="">Browsers</a></li>
                     </ul>
