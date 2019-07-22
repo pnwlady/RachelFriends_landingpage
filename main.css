@@ -1,34 +1,65 @@
 body {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "nav" 
-    "main"
-    "main"
-    "main"
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "nav" 
+  "main"
+  "main"
+  "main";
+  padding: 1rem;
 }
 
-/* //drop down nav */
-.dropbtn {
-  background-color: #4CAF50;
+ul {
+  list-style: none;
+
+}
+a {
+  text-decoration: none;
   color: white;
-  padding: 1.4rem;
-  font-size: 16px;
-  border: none;
+  font-family: arial;
 }
 
+/* Nav */
+.main-nav {
+  grid-area: nav;
+  display: flex;
+  /* background-color: #3A71A6; */
+  border-radius: .2rem;
+  font-size: 17px;
+}
+.main-nav > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.main-nav > ul > li {
+  flex: 1;
+  font-size: 17px;
+
+}
 .dropdown {
   position: relative;
   display: inline-block;
+  border-radius: .2rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #0A4884;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: .2rem;
+}
+
+.dropbtn {
+  background-color: #0A4884;
+  color: white;
+  padding: 1.4rem;
+  font-size: 16px;
+  border: none;
+  border-radius: .2rem;
 }
 
 .dropdown-content a {
@@ -39,7 +70,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #1a5ea1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -47,104 +78,76 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #1a5ea1;
 }
 
-.main-nav {
-    grid-area: nav;
-    display: flex;
-    background-color: #3A71A6;
-    border-radius: .2rem;
-    font-size: 17px;
-}
-.main-nav:hover {
-    color: #1a5ea1;
-}
+/* Main Content  */
 .main-content {
-    grid-area: main;
+  grid-area: main;
 }
-.main-nav > ul {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-  }
-  .main-nav > ul > li {
-    flex: 1;
-    font-size: 17px;
 
-  }
-  ul {
-    list-style: none;
+.tab {
+  overflow: hidden;
+  border: .2rem solid #F8c317;
+  background-color: #f1f1f1;
+  border-radius: .2rem;
+}
+  
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: .2rem;
+}
+  
+.tab button:hover {
+  background-color: #cc9c00;
+}
 
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    font-family: arial;
-  }
-  .tab {
-    overflow: hidden;
-    border: .2rem solid #F8c317;
-    background-color: #f1f1f1;
-    border-radius: .2rem;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-radius: .2rem;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #cc9c00;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #F8c317;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: .2rem solid #F8c317;
-    border-top: none;
-    background-color: white;
-    border-radius: .2rem;
-    color: #032b51;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  } 
-  .subject {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.4rem;
-  }
-  .level {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-  }
-  .source {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-  }
-  .card {
-    text-align: center;
-    background-color: #F8c317;
-    padding: 2rem;
-    border-radius: .2rem;
-  }
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #F8c317;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: .2rem solid #F8c317;
+  border-top: none;
+  background-color: white;
+  border-radius: .2rem;
+  color: #032b51;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.subject {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.4rem;
+}
+.level {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.source {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.card {
+  text-align: center;
+  background-color: #F8c317;
+  padding: 2rem;
+  border-radius: .2rem;
+}
   
