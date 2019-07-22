@@ -76,4 +76,31 @@ body {
     border-top: none;
     background-color: white;
     border-radius: .2rem;
+    color: #032b51;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  .subject {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.4rem;
   }
+  .level {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .source {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .card {
+    text-align: center;
+    background-color: #F8c317;
+    padding: 2rem;
+    border-radius: .2rem;
+  }
+  
