@@ -43,6 +43,16 @@ a {
   border-radius: .2rem;
 }
 
+.dropbtn {
+  background-color: #0A4884;
+  color: white;
+  padding: 1.4rem;
+  font-size: 16px;
+  border: none;
+  border-radius: .2rem;
+  margin: 0 .4rem;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -51,15 +61,7 @@ a {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: .2rem;
-}
-
-.dropbtn {
-  background-color: #0A4884;
-  color: white;
-  padding: 1.4rem;
-  font-size: 16px;
-  border: none;
-  border-radius: .2rem;
+  margin: 0 .4rem;
 }
 
 .dropdown-content a {
@@ -84,6 +86,7 @@ a {
 /* Main Content  */
 .main-content {
   grid-area: main;
+  padding: 0 1rem;
 }
 
 .tab {
